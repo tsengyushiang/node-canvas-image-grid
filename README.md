@@ -24,8 +24,7 @@ Options:
 
 ### Example
 
+-  Git Bash + Docker
 ```
-node index.js -i https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png -o ./output.png -r 100 100 -p 10 1
+docker run --rm -v "/$(pwd):/app" -w //app node:20 node index.js -i 1.jpg 2.jpg 4.jpg 3.jpg -o ./output.png -r 1200 1800 -p 80 1
 ```
-
-![example](./output.png)
